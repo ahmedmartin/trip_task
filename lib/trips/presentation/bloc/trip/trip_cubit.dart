@@ -9,7 +9,7 @@ class TripCubit extends Cubit<TripState> {
   final GetAllTripsUseCase getAllTripsUseCase;
   TripCubit({required this.getAllTripsUseCase}) : super(TripInitial());
 
-  Future<void> getAllCompounds () async {
+  Future<void> getAllTrips () async {
     emit(TripLoading());
 
     final result = await getAllTripsUseCase.call();

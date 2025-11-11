@@ -1,7 +1,7 @@
+import 'package:clean_architecture_posts_app/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
-const primaryColor = Color(0xff000000);
-const secondaryColor = Color(0xffFFC268);
+
 
 final appTheme = ThemeData(
     appBarTheme: const AppBarTheme(

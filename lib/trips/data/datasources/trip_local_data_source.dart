@@ -17,8 +17,12 @@ class TripLocalDataSourceImpl implements TripLocalDataSource {
     try{
     final jsonString = await rootBundle.loadString('assets/trips_mock.json');
     var result = jsonDecode(jsonString);
-			return result['trips'].map((v) => TripsModel.fromJson(v)).toList;
+    List v = result['trips'];
+     v.map((e) => TripsModel.fromJson(e),).toList();
+		List<TripsModel> trips =	v.map((e) => TripsModel.fromJson(e),).toList();
+    return trips;
     }catch(e){
+      print(e);
       throw ServerException();
     }
   }

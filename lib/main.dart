@@ -3,7 +3,7 @@ import 'package:clean_architecture_posts_app/trips/presentation/pages/items_page
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'core/app_theme.dart';
+import 'core/theme/app_theme.dart';
 import 'injection_container.dart' as di;
 
 void main() async {

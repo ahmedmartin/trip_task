@@ -13,7 +13,9 @@ class TripsModel extends Trips{
 		status : json['status'],
 		title : json['title'],
 		dates : DatesModel.fromJson(json['dates']),
-		participants:json['participants'].map((v)=>ParticipantsModel.fromJson(v)).toList,
+		participants:(json['participants'] as List)
+        .map((v) => ParticipantsModel.fromJson(v))
+        .toList(),
 		unfinishedTasks : json['unfinished_tasks'],
 		coverImage : json['cover_image'],
     );
