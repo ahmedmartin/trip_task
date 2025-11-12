@@ -11,10 +11,17 @@ class ItemPageMobile extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: trips.length,
-      itemBuilder: (context, index) {
-      return TripItemWidget(trip: trips[index]);
-    },);
+    return Padding(
+      padding: const EdgeInsets.only(left:  15,right: 15,top: 10),
+      child: ListView.separated(
+        itemCount: trips.length,
+        itemBuilder: (context, index) {
+        return TripItemWidget(trip: trips[index]);
+      },
+      separatorBuilder: (context, index) {
+       return const SizedBox(height: 20,);
+      },
+      ),
+    );
   }
 }

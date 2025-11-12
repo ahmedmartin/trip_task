@@ -1,5 +1,7 @@
+import 'package:clean_architecture_posts_app/core/theme/app_colors.dart';
 import 'package:clean_architecture_posts_app/trips/domain/entities/dates.dart';
 import 'package:clean_architecture_posts_app/trips/domain/entities/participants.dart';
+import 'package:flutter/material.dart';
 
 class Trips {
   final String id;
@@ -19,4 +21,14 @@ class Trips {
     required this.unfinishedTasks,
     required this.coverImage,
   });
+
+  Color getStatusColor(){
+    if(status == 'Proposal Sent'){
+      return yellow;
+    }else if(status == 'Pending Approval'){
+      return orange;
+    }else{
+      return blue;
+    }
+  }
 }
