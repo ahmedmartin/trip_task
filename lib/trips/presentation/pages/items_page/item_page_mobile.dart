@@ -16,7 +16,13 @@ class ItemPageMobile extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: SvgPicture.asset('assets/svg/logo.svg'),
+        title: Row(
+          children: [
+            const Icon(Icons.dehaze_sharp,color: whiteColor,),
+            const SizedBox(width: 20,),
+            SvgPicture.asset('assets/svg/logo.svg'),
+          ],
+        ),
         centerTitle: false,
         actions: [
           const Icon(Icons.settings_outlined,color: whiteColor,),
@@ -49,33 +55,15 @@ class ItemPageMobile extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
                const Text('items',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 26),),
-               Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20)
-                    ),
-                    // child: SvgPicture.asset('assets/svg/filter.svg'),
-                  ),
-          
-                  Container(
+              Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: secondaryColor,
+                      color: black80
                     ),
-                    child: const Row(
-                      children: [
-                        Icon(Icons.add,color: primaryColor,),
-                        SizedBox(width: 10,),
-                        Text('add a new item',style: TextStyle(color: primaryColor),),
-                        
-                      ],
-                    )
-                  )
-                ],
-               )
+                    child: SvgPicture.asset('assets/svg/filter.svg'),
+                  ),
+                 
             ],
           ),
         ),

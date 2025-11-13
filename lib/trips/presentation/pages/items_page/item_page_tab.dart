@@ -80,11 +80,12 @@ class ItemPageTab extends StatelessWidget{
                   Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20)
+                      borderRadius: BorderRadius.circular(20),
+                      color: black80
                     ),
-                    // child: SvgPicture.asset('assets/svg/filter.svg'),
+                    child: SvgPicture.asset('assets/svg/filter.svg'),
                   ),
-          
+                  const SizedBox(width: 10,),
                   Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
