@@ -5,12 +5,13 @@ class DynamicTextWidget extends StatelessWidget {
   final String text;
   final TextStyle? style;
   final double minFontSize;
+  final TextAlign? textAlign;
 
   const DynamicTextWidget({
     super.key,
     required this.text,
     this.style,
-    required this.minFontSize,
+    required this.minFontSize, this.textAlign = TextAlign.end,
   });
 
   @override
@@ -23,7 +24,7 @@ class DynamicTextWidget extends StatelessWidget {
       stepGranularity: 0.5,
       overflow: TextOverflow.visible,
       softWrap: false,
-      textAlign: TextAlign.end,
+      textAlign: textAlign,
     );
   }
 }

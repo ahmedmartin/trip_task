@@ -83,6 +83,7 @@ class TripItemWidget extends StatelessWidget {
                         minFontSize: 8,
                         style:
                             const TextStyle(color: grayColor, fontSize: 14),
+                        textAlign: TextAlign.start,
                       ),
                     ),
                   ],
