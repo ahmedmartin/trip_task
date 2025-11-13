@@ -27,11 +27,9 @@ class _ItemPageState extends State<ItemPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: BlocBuilder(
         bloc: tripCubit,
         builder: (context, state) {
-          print(state);
           if(state is TripLoading){
             return const CircularProgressIndicator();
           }else if(state is TripLoaded){

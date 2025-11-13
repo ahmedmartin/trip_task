@@ -115,6 +115,21 @@
       ],
       "unfinished_tasks": 4,
       "cover_image": "https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "8",
+      "status": "Proposal Sent",
+      "title": "Cairo Getaway",
+      "dates": {
+        "start": "16-01-2024",
+        "end": "20-01-2024"
+      },
+      "participants": [
+        { "name": "Amélie Laurent", "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000" },
+        { "name": "Mateo Alvarez", "avatar_url": "https://st2.depositphotos.com/1537427/5943/v/450/depositphotos_59435811-stock-illustration-female-user-icon.jpg" }
+      ],
+      "unfinished_tasks": 4,
+      "cover_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxn7vnMgHDx4XvTScyccR86PYX3GW987UXoA&s"
     }
   ]
 }
